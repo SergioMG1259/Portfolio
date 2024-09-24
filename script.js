@@ -24,7 +24,7 @@
     }
 
     paperButton.addEventListener('click', function() {
-        window.open('documents/paper.pdf', '_blank');
+        window.open('documents/Paper.pdf', '_blank');
     });
 
     cvButton.addEventListener('click', function() {
