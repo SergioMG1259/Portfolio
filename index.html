@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="script.js" defer></script>
+</head>
+<body class="background-dark">
+    <div class="container">
+        <section class="grid">
+            <div class="box box-dark div1 flex">
+                <h1 class="title-dark">Hi! I'm Sergio</h1>
+                <div class="my-description">
+                    <img src="images/profile.jpeg" alt="Sergio Guanilo image">
+                    <p class="text-dark">My name is Sergio Guanilo, I am 23 years old, a Software Engineering student at 
+                        the Universidad Peruana de Ciencias Aplicadas (UPC), currently in my tenth semester. 
+                        I have specialized in Angular since 2021, consistently applying it to my projects. 
+                        I also use Spring Boot with Java, which enables me to create scalable web applications. 
+                        Web accessibility is one of my top priorities, and I always strive to make my projects easy to use 
+                        for everyone. I deeply value feedback, as I believe it is essential for 
+                        improving and growing professionally.
+                    </p> 
+                </div>
+   
+                <button id="cvButton" class="button button-dark button-cv">View CV</button>
+            </div>
+
+            <div class="box div2 text-light box-dark flex">
+                <h2 class="title-dark title">Experience</h2>
+                <div class="wrapper-experience flex">
+                    <div class="line">
+
+                    </div>
+                    <div class="card-experience">
+                        <p class="title-project-dark date-experience">Jun 23 - Mar 24</p>
+                        <p class="title-project-dark company-name">NAS Consulting</p>
+                        <p class="text-dark experience-description">
+                            I developed and migrated Oracle forms from 6i to 12c using PL/SQL for a valuable goods 
+                            transportation company, improving data integrity in concurrent forms and optimizing cash 
+                            verification processes.
+                        </p>
+                        <!-- <a href="#" class="link">Proof of internship</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="box div3 flex technologies">     
+                <div class="flex tec-icon">
+                    <i class="devicon-html5-plain"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="flex tec-icon">
+                    <i class="devicon-css3-plain"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="flex tec-icon">
+                    <i class="devicon-javascript-plain"></i>
+                    <p>Javascript</p>
+                </div>
+                <div class="flex tec-icon">
+                    <i class="devicon-typescript-plain"></i>
+                    <p>Typescript</p>
+                </div>
+                <div class="flex tec-icon">
+                    <i class="devicon-angular-plain"></i>
+                    <p>Angular</p>
+                </div>
+                <div class="flex tec-icon">
+                    <i class="devicon-rxjs-plain"></i>
+                    <p>Rxjs</p>
+                </div>
+                <div class="flex tec-icon">
+                    <i class="devicon-python-plain"></i>
+                    <p>Python</p>
+                </div>  
+                <div class="flex tec-icon">
+                    <i class="devicon-java-plain"></i>
+                    <p>Java</p>
+                </div>               
+                <div class="flex tec-icon">
+                    <i class="devicon-spring-original"></i>
+                    <p>Spring Boot</p>
+                </div>                          
+                <div class="flex tec-icon">
+                    <i class="devicon-mysql-original"></i>
+                    <p>MySQL</p>
+                </div>                 
+                <div class="flex tec-icon">
+                    <i class="devicon-oracle-original"></i>
+                    <p>PL/SQL</p>
+                </div>               
+                <div class="flex tec-icon">
+                    <i class="devicon-git-plain"></i>
+                    <p>Git</p>
+                </div>
+            </div>
+
+            <div class="box div4 flex social-media box-dark">
+                <a href="https://www.linkedin.com/in/sergio-martin-guanilo-gonzales-989677268" target="_blank">
+                    <i class='bx bxl-linkedin' ></i>
+                </a>
+                <a href="https://github.com/SergioMG1259" target="_blank">
+                    <i class='bx bxl-github' ></i>
+                </a>
+            </div>
+
+            <div class="box div5 flex email">
+                <button class="button-clipboard">
+                    <i class='bx bx-clipboard'></i>
+                </button>
+                <i class='bx bx-envelope'></i>
+            </div>
+        </section>
+        <section class="section-projects box box-dark">
+            <h2 class="title title-dark">Projects</h2>
+            <div class="flex projects">
+                <!-- <div class="flex card-project">
+                    <div class="project-image dashboard">
+                        <img src="https://img.freepik.com/vector-gratis/panel-usuario-panel-infografia-plantilla_23-2148378206.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1715126400&semt=ais" alt="">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="name-project title-project-dark">Dashboard</h3>
+                        <div class="flex tec-used">
+                            <i class="icon-project devicon-html5-plain-wordmark icons-dark"></i>
+                            <i class="icon-project devicon-css3-plain-wordmark icons-dark"></i>
+                            <i class="icon-project devicon-typescript-plain icons-dark"></i>
+                            <i class="icon-project devicon-angular-plain icons-dark"></i>
+                        </div>
+                        <p class="project-description text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic nulla accusantium, accusamus 
+                            expedita odio, fuga nisi ad animi similique officia deleniti numquam iure minima molestias incidunt 
+                            commodi eaque temporibus!
+                        </p>
+                        <footer class="flex card-project-footer">
+                            <button class="button button-dark">Code <i class='bx bx-code'></i> </button>
+                            <button class="button button-dark">Live <i class='bx bx-navigation'></i> </button>
+                        </footer>
+                    </div>
+                </div> -->
+                <div class="flex card-project">
+                    <div class="project-image avh">
+                        <img src="images/AVH.PNG" alt="Virtual Assitant Luna">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="name-project title-project-dark">Virtual Assistant Luna</h3>
+                        <div class="flex tec-used">
+                            <i class="icon-project devicon-blender-original icons-dark"></i>
+                            <i class="icon-project devicon-unity-plain icons-dark"></i>
+                            <i class="icon-project devicon-csharp-plain icons-dark"></i>
+                            <i class="icon-project devicon-amazonwebservices-plain-wordmark icons-dark"></i>
+                            <i class="icon-project devicon-python-plain icons-dark"></i>
+                        </div>
+                        <p class="project-description text-dark">
+                            I developed a holographic virtual assistant for children as my final university project. 
+                            I used Blender for modeling, Unity for the mobile app, and AWS Lambda for voice processing, 
+                            transcription, response generation, and audio synthesis thanks to OpenAI and ElevenLabs services.
+                        </p>
+                        <footer class="flex card-project-footer">
+                            <button class="button button-dark" id="paperButton">Read paper <i class='bx bx-file'></i> </button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
