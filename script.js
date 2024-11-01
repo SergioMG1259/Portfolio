@@ -23,9 +23,9 @@
         }
     }
 
-    paperButton.addEventListener('click', function() {
-        window.open('documents/Paper.pdf', '_blank');
-    });
+    // paperButton.addEventListener('click', function() {
+    //     window.open('documents/Paper.pdf', '_blank');
+    // });
 
     cvButton.addEventListener('click', function() {
         window.open('documents/Sergio Guanilo CV.pdf', '_blank');
