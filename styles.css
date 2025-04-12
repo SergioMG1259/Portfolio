@@ -442,6 +442,20 @@ h2 {
     gap: 12px;
     max-width: 760px;
 }
+.button-back {
+    align-items: center;
+    background-color: transparent;
+    border: solid 1px transparent;
+    cursor: pointer;
+    display: flex;
+    height: 30.4px;
+    margin-right: 5px;
+    width: 26px;
+}
+.button-back i {
+    color: var(--text-secondary-color);
+    font-size: 20px;
+}
 .dialog-wrapper p{
     color: var(--text-color);
 }
