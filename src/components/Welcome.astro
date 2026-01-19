@@ -1,51 +1,220 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
 import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets';
+import avhPrincipal from '../assets/images/AVH-principal.png';
+import healthplusPrincipal from '../assets/images/healthPlus-principal.png';
+import predictionPrincipal from '../assets/images/prediction-principal.png';
 import "../styles/global.css";
 ---
 <div class="bg-background w-full h-dvh">
-	<main class=" pt-30">
+	<main class="pt-30">
 		<div class="flex flex-row gap-20 w-min m-auto">
+			<!-- CARD -->
 			<div class="w-xs p-7 h-min top-10 sticky rounded-xl bg-background-contrast flex flex-col gap-5 text-center">
 				<div class="bg-amber-800 w-50 h-58 rounded-xl m-auto">
 
 				</div>
 				<h2 class="text-font-contrast-title text-2xl">Sergio Guanilo</h2>
-				<p class="text-font-contrast-text">I specialize in Angular and Spring Boot, building scalable and accessible web applications</p>
+				<p class="text-font-contrast-text">Bachelor's degree in Software Engineering from Universidad Peruana de Ciencias Aplicadas (UPC).</p>
 			</div>
 
+			<!-- RIGHT -->
 			<div class="flex flex-col gap-16 w-xl">
+				<!-- PRESENTATION -->
 				<div class="flex flex-col gap-10">
-					<div class="flex flex-col gap-5">
+					<div class="flex flex-col gap-3">
 						<div>
 							<h2 class="text-8xl font-bold">SOFTWARE</h2>
 							<span class="text-8xl font-bold text-font-highlight">ENGINEER</span>
 						</div>
-						<div class="max-w-96">
-							<p>Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted products.</p>
+						<div class="max-w-100">
+							<p class="text-lg">I specialize in Angular and Spring Boot, building scalable and accessible web applications, applying reactive patterns and following best practices.</p>
 						</div>
 					</div>
 
 					<div class="flex gap-5">
-						<div class="w-65 p-5 bg-gradient-to-r from-purple-600 to-purple-400 rounded-xl flex flex-col gap-3">
+						<div class="w-65 p-5 bg-linear-to-r from-purple-600 to-purple-400 rounded-xl flex flex-col gap-3">
 							<Icon name="mdi:github" class="text-4xl"/>
 							<p class="text-xl font-semibold">Browse my repositories in Github</p>
-							<Icon name="mdi:arrow-right-bold-box-outline" class="text-4xl ml-auto"/>
+							<div>
+								<a href="https://github.com/SergioMG1259?tab=repositories" target="_blank" class="flex w-fit ml-auto">
+									<Icon name="mdi:arrow-right-bold-box-outline" class="text-4xl ml-auto"/>
+								</a>
+							</div>
 						</div>
-						<div class="flex-1 p-5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl flex flex-col gap-3">
+						<div class="flex-1 p-5 bg-linear-to-r from-blue-600 to-blue-400 rounded-xl flex flex-col gap-3">
 							<Icon name="mdi:linkedin" class="text-4xl"/>
 							<p class="text-xl font-semibold">Connect with me on LinkedIn</p>
-							<Icon name="mdi:arrow-right-bold-box-outline" class="text-4xl ml-auto"/>
+							<div>
+								<div>
+									<a href="https://www.linkedin.com/in/sergio-guanilo/" target="_blank" class="flex w-fit ml-auto">
+										<Icon name="mdi:arrow-right-bold-box-outline" class="text-4xl ml-auto"/>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div>
+				<!-- PROJECTS -->
+				<div class="flex flex-col gap-10">
+					<div>
 						<h2 class="text-8xl font-bold">RECENT</h2>
 						<span class="text-8xl font-bold text-font-highlight">PROJECTS</span>
+					</div>
+					
+					<div class="flex flex-col gap-3">
+						<div class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300">
+							<Image src={avhPrincipal} alt="Luna image" width={170} height={150} fit='cover' class="rounded-xl"/>
+							<div class="flex items-center flex-1 relative">
+								<div>
+									<p class="font-semibold text-xl">Luna</p>
+									<p>holographic assistant AI</p>
+								</div>
+								<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+							</div>
+						</div>
+
+						<div class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300">
+							<Image src={healthplusPrincipal} alt="HealthPlus image" width={170} height={150} fit='cover' class="rounded-xl"/>
+							<div class="flex items-center flex-1 relative">
+								<div>
+									<p class="font-semibold text-xl">HealthPlus</p>
+									<p>Platform for managing medical appointments</p>
+								</div>
+								<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+							</div>
+						</div>
+
+						<div class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300">
+							<Image src={predictionPrincipal} alt="Prediction image" width={170} height={150} fit='cover' class="rounded-xl"/>
+							<div class="flex items-center flex-1 relative">
+								<div>
+									<p class="font-semibold text-xl">Linear regression</p>
+									<p>Model training to predict car seat sales</p>
+								</div>
+								<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- EXPERIENCE -->
+				<div class="flex flex-col gap-10">
+					<div>
+						<h2 class="text-8xl font-bold">WORK</h2>
+						<span class="text-8xl font-bold text-font-highlight">EXPERIENCE</span>
+					</div>
+
+					<div class="flex flex-col gap-8">
+						<div class="pl-5 pr-5 flex flex-col gap-3">
+							<p class="font-semibold text-xl">Backend Developer - Softtek (Pacífico Seguros)</p>
+							<p>Developed high-concurrency reactive microservices using Spring WebFlux, following non-blocking architecture principles. Implemented unit and integration tests, performed load testing with k6, and monitored JVM performance.</p>
+							<p>Nov 2025 - Present</p>
+						</div>
+
+						<div class="pl-5 pr-5 flex flex-col gap-3">
+							<p class="font-semibold text-xl">Data Quality Analyst - Softtek (BBVA Perú)</p>
+							<p>Analyzed and validated production data using PySpark across multiple data sources. Implemented data quality rules, generated test data, and ensured compliance with defined metrics.</p>
+							<p>Jun 2025 - Nov 2025</p>
+						</div>
+						
+						<div class="pl-5 pr-5 flex flex-col gap-3">
+							<p class="font-semibold text-xl">IT Intern - NAS Consulting</p>
+							<p>Migrated and developed Oracle Forms (6i and 12c) and maintained PL/SQL procedures, functions, and queries to support internal business processes.</p>
+							<p>Jun 2023 - Mar 2024</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- SKILLS -->
+				<div class="flex flex-col gap-10">
+					<div>
+						<h2 class="text-8xl font-bold">TECHNICAL</h2>
+						<span class="text-8xl font-bold text-font-highlight">SKILLS</span>
+					</div>
+					
+					<div class="grid grid-cols-2 gap-y-8">
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/2415/PNG/512/java_original_logo_icon_146458.png" alt="java icon" width={40} height={40}>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">Java</p>
+								<p class="text-sm">Programming Language</p>
+							</div>
+						</div>
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/3915/PNG/512/springboot_logo_icon_249540.png" alt="spring boot icon" width={40} height={40}>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">Spring boot</p>
+								<p class="text-sm">Java Framework</p>
+							</div>
+						</div>
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/2699/PNG/512/angular_logo_icon_169595.png" alt="angular icon" width={40} height={40}>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">Angular</p>
+								<p class="text-sm">Web Framework</p>
+							</div>
+						</div>
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/2148/PNG/512/nextjs_icon_132160.png" alt="nextjs icon" width={40} height={40}>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">Nextjs</p>
+								<p class="text-sm">Web Language</p>
+							</div>
+						</div>
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png" alt="python icon" width={40} height={40}>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">Python</p>
+								<p class="text-sm">Programming Language</p>
+							</div>
+						</div>
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png" alt="mysql icon" width={40} height={40}>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">MySQL</p>
+								<p class="text-sm">Database</p>
+							</div>
+						</div>
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/2415/PNG/512/git_original_logo_icon_146509.png" alt="git icon" width={40} height={40}/>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">Git</p>
+								<p class="text-sm">Version Control</p>
+							</div>
+						</div>
+						<div class="px-5 flex flex-row gap-3">
+							<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+								<Image src="https://images.icon-icons.com/2407/PNG/512/aws_icon_146074.png" alt="aws icon" width={40} height={40}>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p class="font-semibold text-lg">AWS</p>
+								<p class="text-sm">Cloud Service</p>
+							</div>
+						</div>						
+					</div>
 				</div>
 			</div>
 		</div>
 	</main>
+
+	<!-- FOOTER -->
+	<footer class="text-center w-full py-10">
+		<p>Portfolio developed using <span class="font-semibold">Astro framework</span></p>
+	</footer>
 </div>
