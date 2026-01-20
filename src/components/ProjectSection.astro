@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components'
+import avhPrincipal from '../assets/images/AVH-principal.png';
+import healthplusPrincipal from '../assets/images/healthPlus-principal.png';
+import predictionPrincipal from '../assets/images/prediction-principal.png';
+import "../styles/global.css";
+---
+
+<!-- PROJECTS -->
+<div class="flex flex-col gap-10">
+	<div>
+		<h2 class="text-8xl font-bold">RECENT</h2>
+		<span class="text-8xl font-bold text-font-highlight">PROJECTS</span>
+	</div>
+	
+	<div class="flex flex-col gap-3">
+		<a href="/project/luna" class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300 cursor-pointer">
+			<Image src={avhPrincipal} alt="Luna image" width={170} height={150} fit='cover' class="rounded-xl"/>
+			<div class="flex items-center flex-1 relative">
+				<div>
+					<p class="font-semibold text-xl">Luna</p>
+					<p>Holographic assistant AI</p>
+				</div>
+				<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+			</div>
+		</a>
+
+		<a href="/project/healthplus" class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300 cursor-pointer">
+			<Image src={healthplusPrincipal} alt="HealthPlus image" width={170} height={150} fit='cover' class="rounded-xl"/>
+			<div class="flex items-center flex-1 relative">
+				<div>
+					<p class="font-semibold text-xl">HealthPlus</p>
+					<p>Platform for managing medical appointments</p>
+				</div>
+				<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+			</div>
+		</a>
+
+		<a href="/project" class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300 cursor-pointer">
+			<Image src={predictionPrincipal} alt="Prediction image" width={170} height={150} fit='cover' class="rounded-xl"/>
+			<div class="flex items-center flex-1 relative">
+				<div>
+					<p class="font-semibold text-xl">Sales prediction</p>
+					<p>Model training to predict car seat sales</p>
+				</div>
+				<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+			</div>
+		</a>
+	</div>
+</div>

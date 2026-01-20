@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import type { Project } from '../data/projects';
+import '../styles/global.css'
+
+const { project } = Astro.props as { project: Project };
+---
+
+<main class="pt-30 w-min m-auto">
+
+	<div class="flex gap-5 mb-10">
+		<a href="/">
+			<Icon name="mdi:arrow-left-bold-box-outline" class="text-7xl -ml-3"></Icon>
+		</a>
+		<h2 class="text-7xl font-bold">{project.title}</h2>
+	</div>
+
+	<div class="flex flex-row gap-20 ">
+
+		<ul class="w-125 h-min rounded-xl grid grid-cols-2 gap-x-2 gap-y-8">
+			{
+				project.tools.map(tool => (
+
+					<li class=" flex flex-row gap-3">
+						<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+							<Image src={tool.iconUrl} alt={tool.name} width={40} height={40}/>
+						</div>
+						<div class="flex flex-col justify-center">
+							<p class="font-semibold text-base">{tool.name}</p>
+							<p class="text-sm">{tool.description}</p>
+						</div>
+					</li>
+
+				))
+			}
+		</ul>
+
+		<!-- RIGHT -->
+		<div class="flex flex-col gap-6 w-md">
+			<p class="font-semibold text-xl">Description</p>
+			
+			<p>{project.summary}</p>
+			
+			<div class="flex gap-10">
+				<a href="https://www.youtube.com/watch?v=OxCELIKbKrE" target="_blank" class="flex items-center gap-2">
+					<Image src="https://images.icon-icons.com/195/PNG/256/YouTube_23392.png" alt="youtube icon" width={40} height={40}></Image>
+					<span>Watch</span>
+				</a>
+				<a href="https://doi.org/10.54808/CICIC2025.01.49" target="_blank" class="w flex items-center gap-2">
+					<Image src="https://images.icon-icons.com/3720/PNG/512/paper_learning_school_study_education_book_icon_230386.png" alt="document icon" width={40} height={40}></Image>
+					<span>Read paper</span>
+				</a>
+			</div>
+			
+			<Image src={project.coverImage.url} alt={project.coverImage.alt} width={500} height={250} fit='cover' class="rounded-xl"/>
+		</div>
+
+	</div>
+</main>

@@ -13,7 +13,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-background: #080d17;
-        --color-font: #dfdcdc;
+        --color-font: #ededed;
         --color-font-highlight: #747171;
         --color-background-contrast: #e2e2e2;
         --color-font-contrast-title: #0d0e12;
