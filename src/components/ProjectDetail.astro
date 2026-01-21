@@ -7,54 +7,51 @@ import '../styles/global.css'
 const { project } = Astro.props as { project: Project };
 ---
 
-<main class="pt-30 px-5 max-w-3xl m-auto lg:max-w-5xl">
-
-	<div class="text-4xl flex mb-5 gap-3 sm:gap-5 sm:mb-10 sm:text-7xl">
-		<a href="/" class="flex items-center justify-center">
-			<Icon name="mdi:arrow-left-bold-box-outline" class="-ml-2"></Icon>
-		</a>
-		<div class="min-w-0">
-			<h2 class="font-bold truncate">{project.title}</h2>
-		</div>
+<div class="text-4xl flex mb-5 gap-3 sm:gap-5 sm:mb-10 sm:text-7xl">
+	<a href="/" class="flex items-center justify-center">
+		<Icon name="mdi:arrow-left-bold-box-outline" class="-ml-2"></Icon>
+	</a>
+	<div class="min-w-0">
+		<h2 class="font-bold truncate">{project.title}</h2>
 	</div>
+</div>
 
-	<div class="flex flex-col-reverse gap-7 lg:flex-row lg:gap-17">
+<div class="flex flex-col-reverse gap-7 lg:flex-row lg:gap-17">
 
-		<ul class="h-min rounded-xl grid gap-x-2 gap-y-8 sm:grid-cols-2 sm:w-125">
+	<ul class="h-min rounded-xl grid gap-x-2 gap-y-8 sm:grid-cols-2 sm:w-125">
+		{
+			project.tools.map(tool => (
+				<li class=" flex flex-row gap-3">
+					<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
+						<Image src={tool.iconUrl} alt={tool.name} width={40} height={40}/>
+					</div>
+					<div class="flex flex-col justify-center">
+						<p class="font-semibold text-base">{tool.name}</p>
+						<p class="text-sm">{tool.description}</p>
+					</div>
+				</li>
+			))
+		}
+	</ul>
+
+	<!-- RIGHT -->
+	<div class="flex flex-col flex-1 gap-5">
+		<p class="font-semibold text-xl">Description</p>
+		
+		<p>{project.summary}</p>
+		
+		<div class="flex flex-wrap gap-x-10 gap-y-3">
 			{
-				project.tools.map(tool => (
-					<li class=" flex flex-row gap-3">
-						<div class="w-16 h-16 bg-background-contrast rounded-xl flex items-center justify-center">
-							<Image src={tool.iconUrl} alt={tool.name} width={40} height={40}/>
-						</div>
-						<div class="flex flex-col justify-center">
-							<p class="font-semibold text-base">{tool.name}</p>
-							<p class="text-sm">{tool.description}</p>
-						</div>
-					</li>
+				project.links.map(link => (
+					<a href={link.url} target="_blank" class="flex items-center gap-2">
+						<Image src={link.imageUrl} alt={link.label} width={40} height={40} fit='cover' />
+						<span>{link.label}</span>
+					</a>
 				))
 			}
-		</ul>
-
-		<!-- RIGHT -->
-		<div class="flex flex-col flex-1 gap-5">
-			<p class="font-semibold text-xl">Description</p>
-			
-			<p>{project.summary}</p>
-			
-			<div class="flex flex-wrap gap-x-10 gap-y-3">
-				{
-					project.links.map(link => (
-						<a href={link.url} target="_blank" class="flex items-center gap-2">
-							<Image src={link.imageUrl} alt={link.label} width={40} height={40} fit='cover' />
-							<span>{link.label}</span>
-						</a>
-					))
-				}
-			</div>
-			
-			<Image src={project.coverImage.url} alt={project.coverImage.alt} class="rounded-xl sm:w-120 sm:h-62.5" fit='cover'/>
 		</div>
-
+		
+		<Image src={project.coverImage.url} alt={project.coverImage.alt} class="rounded-xl sm:w-120 sm:h-62.5" fit='cover'/>
 	</div>
-</main>
+
+</div>
