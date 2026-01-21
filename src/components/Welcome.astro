@@ -7,16 +7,16 @@ import PresentationSection from "./PresentationSection.astro";
 ---
 
 <main class="pt-30">
-	<div class="flex flex-row gap-20 w-min m-auto">
+	<div class="flex flex-col gap-10 m-auto px-5 max-w-3xl lg:flex-row lg:max-w-5xl lg:gap-20">
 		<!-- CARD -->
-		<div class="w-xs p-7 h-min top-10 sticky rounded-xl bg-background-contrast flex flex-col gap-5 text-center">
+		<div class="w-full lg:w-xs p-7 h-min top-10 rounded-xl bg-background-contrast flex flex-col gap-5 text-center lg:sticky">
 			<div class="bg-amber-800 w-50 h-58 rounded-xl m-auto">
 			</div>
-			<h2 class="text-font-contrast-title text-2xl">Sergio Guanilo</h2>
-			<p class="text-font-contrast-text">Bachelor's degree in Software Engineering from Universidad Peruana de Ciencias Aplicadas (UPC).</p>
+			<h2 class="text-font-contrast-title text-2xl">Sergio Guanilo Gonzales</h2>
+			<p class="m-auto text-font-contrast-text sm:w-72 lg:w-full">Bachelor's degree in Software Engineering from Universidad Peruana de Ciencias Aplicadas (UPC).</p>
 		</div>
 		<!-- RIGHT -->
-		<div class="flex flex-col gap-16 w-xl">
+		<div class="flex flex-1 flex-col gap-10 lg:gap-16">
 			<PresentationSection />
 			<ProjectSection />
 			<ExperienceSection />

@@ -1,5 +1,7 @@
 import type { ImageMetadata } from "astro";
 import lunaCover from '../assets/images/AVH1.png';
+import healthplusCover from '../assets/images/healthplus1.png';
+import salesPredictionCover from '../assets/images/prediction2.png';
 
 export interface Tool {
   name: string;
@@ -79,6 +81,87 @@ export const projects: Project[] = [
         coverImage: {
             url: lunaCover,
             alt: 'Luna project image'
+        }
+    },
+    {
+        slug: 'healthplus',
+        title: 'HealthPlus',
+        summary: 'It’s a personal demonstrative project built with Angular, Spring Boot, and MySQL. It allows healthcare specialists to manage patients, schedule appointments via an interactive calendar, and visualize key information through a responsive dashboard with metrics and intuitive charts. Additionally, I implemented JWT authentication to secure the backend and sensitive data.',
+        tools: [
+            {
+                name: 'Angular',
+                description: 'Web Framework',
+                iconUrl: 'https://images.icon-icons.com/2699/PNG/512/angular_logo_icon_169595.png'
+            },
+            {
+                name: 'Spring Boot',
+                description: 'Java Framework',
+                iconUrl: 'https://images.icon-icons.com/3915/PNG/512/springboot_logo_icon_249540.png'
+            },
+            {
+                name: 'MySQL',
+                description: 'Database',
+                iconUrl: 'https://images.icon-icons.com/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png'
+            },
+            {
+                name: 'Docker',
+                description: 'Containerization',
+                iconUrl: 'https://images.icon-icons.com/2407/PNG/512/docker_icon_146192.png'
+            }
+        ],
+        links: [
+            {
+                label: 'Demo',
+                url: 'https://healthplus-wr6r.onrender.com/login',
+                imageUrl: 'https://images.icon-icons.com/1488/PNG/512/5381-web_102602.png'
+            },
+            {
+                label: 'Frontend',
+                url: 'https://github.com/SergioMG1259/healthPlus-Frontend',
+                imageUrl: 'https://images.icon-icons.com/844/PNG/512/Github_icon-icons.com_67091.png'
+            },
+            {
+                label: 'Backend',
+                url: 'https://github.com/SergioMG1259/healthPlus-Backend',
+                imageUrl: 'https://images.icon-icons.com/844/PNG/512/Github_icon-icons.com_67091.png'
+            }
+        ],
+        coverImage: {
+            url: healthplusCover,
+            alt: 'HealthPlus project image'
+        }
+    },
+    {
+        slug: 'sales-prediction',
+        title: 'Sales Prediction',
+        summary: 'This demonstrative project uses a multiple linear regression model to predict baby car seat sales. A public dataset from Kaggle was used in Google Colaboratory with Python. Although the data does not correspond to a real company, the analysis exemplifies the application of predictive techniques in business scenarios.',
+        tools: [
+            {
+                name: 'Python',
+                description: 'Programming laguage',
+                iconUrl: 'https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png'
+            },
+            {
+                name: 'Jupyter',
+                description: 'Interactive Notebooks.',
+                iconUrl: 'https://images.icon-icons.com/2699/PNG/512/jupyter_logo_icon_169452.png'
+            }
+        ],
+        links: [
+            {
+                label: 'Dataset',
+                url: 'https://www.kaggle.com/datasets/motahareshokri/child-car-safety-seats/data',
+                imageUrl: 'https://images.icon-icons.com/2699/PNG/512/kaggle_logo_icon_168474.png'
+            },
+            {
+                label: 'Code',
+                url: 'https://colab.research.google.com/drive/1tCAWzvjeXzTjoyegk1VpsymlU6GJykko?usp=sharing',
+                imageUrl: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-colab-icon.png'
+            }
+        ],
+        coverImage: {
+            url: salesPredictionCover,
+            alt: 'Sales prediction project image'
         }
     }
 ];

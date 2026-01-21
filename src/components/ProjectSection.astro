@@ -8,43 +8,43 @@ import "../styles/global.css";
 ---
 
 <!-- PROJECTS -->
-<div class="flex flex-col gap-10">
-	<div>
-		<h2 class="text-8xl font-bold">RECENT</h2>
-		<span class="text-8xl font-bold text-font-highlight">PROJECTS</span>
+<div class="flex flex-col gap-7 lg:gap-10">
+	<div class="text-5xl text-center sm:text-7xl lg:text-8xl lg:text-start">
+		<h2 class="font-bold">RECENT</h2>
+		<span class="font-bold text-font-highlight">PROJECTS</span>
 	</div>
 	
 	<div class="flex flex-col gap-3">
 		<a href="/project/luna" class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300 cursor-pointer">
-			<Image src={avhPrincipal} alt="Luna image" width={170} height={150} fit='cover' class="rounded-xl"/>
+			<Image src={avhPrincipal} alt="Luna image" class="rounded-xl w-28 h-23 sm:w-42.5 sm:h-37.5" fit='cover'/>
 			<div class="flex items-center flex-1 relative">
 				<div>
-					<p class="font-semibold text-xl">Luna</p>
+					<p class="font-semibold text-lg sm:text-xl">Luna</p>
 					<p>Holographic assistant AI</p>
 				</div>
-				<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+				<Icon name="mdi:arrow-top-right-bold-box-outline" class="hidden text-4xl absolute top-0 right-0 sm:block"></Icon>
 			</div>
 		</a>
 
 		<a href="/project/healthplus" class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300 cursor-pointer">
-			<Image src={healthplusPrincipal} alt="HealthPlus image" width={170} height={150} fit='cover' class="rounded-xl"/>
+			<Image src={healthplusPrincipal} alt="HealthPlus image" class="rounded-xl w-28 h-23 sm:w-42.5 sm:h-37.5" fit='cover' />
 			<div class="flex items-center flex-1 relative">
 				<div>
-					<p class="font-semibold text-xl">HealthPlus</p>
-					<p>Platform for managing medical appointments</p>
+					<p class="font-semibold text-lg sm:text-xl">HealthPlus</p>
+					<p>Medical booking platform</p>
 				</div>
-				<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+				<Icon name="mdi:arrow-top-right-bold-box-outline" class="hidden text-4xl absolute top-0 right-0 sm:block"></Icon>
 			</div>
 		</a>
 
-		<a href="/project" class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300 cursor-pointer">
-			<Image src={predictionPrincipal} alt="Prediction image" width={170} height={150} fit='cover' class="rounded-xl"/>
+		<a href="/project/sales-prediction" class="p-5 flex gap-5 rounded-xl hover:bg-gray-900 hover:transition duration-300 cursor-pointer">
+			<Image src={predictionPrincipal} alt="Prediction image" class="rounded-xl w-28 h-23 sm:w-42.5 sm:h-37.5" fit='cover'/>
 			<div class="flex items-center flex-1 relative">
 				<div>
-					<p class="font-semibold text-xl">Sales prediction</p>
-					<p>Model training to predict car seat sales</p>
+					<p class="font-semibold text-lg sm:text-xl">Sales Prediction</p>
+					<p>Model training</p>
 				</div>
-				<Icon name="mdi:arrow-top-right-bold-box-outline" class="text-4xl absolute top-0 right-0"></Icon>
+				<Icon name="mdi:arrow-top-right-bold-box-outline" class="hidden text-4xl absolute top-0 right-0 sm:block"></Icon>
 			</div>
 		</a>
 	</div>
