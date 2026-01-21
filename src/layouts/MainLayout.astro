@@ -12,8 +12,8 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body class="bg-background text-font w-full h-dvh">
-        <main class="pt-30 relative">
+	<body class="bg-background text-font w-full h-dvh min-h-screen flex flex-col">
+        <main class="pt-30 relative flex-1">
             <NavBar />
             <div class="flex flex-col gap-10 m-auto px-5 max-w-3xl lg:flex-row lg:max-w-5xl lg:gap-20">
                 <CardPresentation />
@@ -22,13 +22,11 @@ import "../styles/global.css";
                 </div>
             </div>
         </main>
-		
+		<!-- FOOTER -->
+		<footer class="text-center w-full px-5 py-12">
+			<p>Portfolio developed using <span class="font-semibold">Astro framework</span></p>
+		</footer>		
 	</body>
-	
-	<!-- FOOTER -->
-	<footer class="text-center w-full px-5 py-12">
-		<p>Portfolio developed using <span class="font-semibold">Astro framework</span></p>
-	</footer>
 </html>
 
 <style>

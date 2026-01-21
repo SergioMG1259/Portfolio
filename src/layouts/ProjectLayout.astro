@@ -11,17 +11,16 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body class="bg-background text-font w-full h-dvh">
-		<main class="pt-30 relative px-5 max-w-3xl m-auto lg:max-w-5xl">
+	<body class="bg-background text-font w-full h-dvh min-h-screen flex flex-col">
+		<main class="pt-30 relative px-5 max-w-3xl m-auto lg:max-w-5xl flex-1">
             <NavBar />
 			<slot />
 		</main>
+		<!-- FOOTER -->
+		<footer class="text-center w-full px-5 py-12">
+			<p>Portfolio developed using <span class="font-semibold">Astro framework</span></p>
+		</footer>
 	</body>
-	
-	<!-- FOOTER -->
-	<footer class="text-center w-full px-5 py-12">
-		<p>Portfolio developed using <span class="font-semibold">Astro framework</span></p>
-	</footer>
 </html>
 
 <style>

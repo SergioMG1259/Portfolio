@@ -1,7 +1,7 @@
 import type { ImageMetadata } from "astro";
 import lunaCover from '../assets/images/AVH1.png';
 import healthplusCover from '../assets/images/healthplus1.png';
-import salesPredictionCover from '../assets/images/prediction2.png';
+import salesPredictionCover from '../assets/images/prediction1.png';
 
 export interface Tool {
   name: string;
