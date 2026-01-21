@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets';
+import Profile from '../assets/images/profile-image.png'
+import "../styles/global.css";
+---
+
+<div class="w-full lg:w-xs p-7 h-min top-10 rounded-xl bg-background-contrast flex flex-col gap-5 text-center lg:sticky">
+    <!-- <div class="bg-amber-800 w-50 h-58 rounded-xl m-auto">
+    </div> -->
+    <Image src={Profile} alt="Profile image" class="w-50 h-60 rounded-xl m-auto" fit='cover'></Image>
+    <h2 class="text-font-contrast-title text-2xl">Sergio Guanilo Gonzales</h2>
+    <p class="m-auto text-font-contrast-text sm:w-72 lg:w-full">Software Engineering Bachelor | Universidad Peruana de Ciencias Aplicadas (UPC)</p>
+</div>

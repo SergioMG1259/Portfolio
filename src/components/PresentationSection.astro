@@ -1,0 +1,39 @@
+---
+import { Icon } from 'astro-icon/components'
+import "../styles/global.css";
+---
+
+<!-- PRESENTATION -->
+<div class="flex flex-col gap-7 lg:gap-10">
+	<div class="flex flex-col gap-5 items-center lg:items-start">
+		<div class="text-5xl text-center sm:text-7xl lg:text-8xl lg:text-start">
+			<h2 class="font-bold">SOFTWARE</h2>
+			<span class="font-bold text-font-highlight">ENGINEER</span>
+		</div>
+		<div class="max-w-105">
+			<p class="text-lg">Specialized in Angular and Spring Boot. I develop scalable, accessible web applications by implementing reactive patterns and best practices.</p>
+		</div>
+	</div>
+	<div class="items-center flex flex-col gap-5 sm:flex-row sm:items-start">
+		<div class="max-w-72 h-48 p-5 bg-linear-to-r from-purple-600 to-purple-400 rounded-xl flex flex-col gap-3 sm:w-73 lg:w-65">
+			<Icon name="mdi:github" class="text-4xl"/>
+			<p class="text-xl font-semibold">Browse my repositories in Github</p>
+			<div>
+				<a href="https://github.com/SergioMG1259?tab=repositories" target="_blank" class="flex w-fit ml-auto">
+					<Icon name="mdi:arrow-right-bold-box-outline" class="text-4xl ml-auto"/>
+				</a>
+			</div>
+		</div>
+		<div class="max-w-72 h-48 p-5 bg-linear-to-r from-blue-600 to-blue-400 rounded-xl flex flex-col gap-3 sm:flex-1 sm:max-w-full">
+			<Icon name="mdi:linkedin" class="text-4xl"/>
+			<p class="text-xl font-semibold">Connect with me on LinkedIn</p>
+			<div>
+				<div>
+					<a href="https://www.linkedin.com/in/sergio-guanilo/" target="_blank" class="flex w-fit ml-auto">
+						<Icon name="mdi:arrow-right-bold-box-outline" class="text-4xl ml-auto"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
