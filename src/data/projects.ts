@@ -80,7 +80,7 @@ export const projects: Project[] = [
         ],
         coverImage: {
             url: lunaCover,
-            alt: 'Luna project image'
+            alt: 'Luna project'
         }
     },
     {
@@ -128,7 +128,7 @@ export const projects: Project[] = [
         ],
         coverImage: {
             url: healthplusCover,
-            alt: 'HealthPlus project image'
+            alt: 'HealthPlus project'
         }
     },
     {
@@ -161,7 +161,7 @@ export const projects: Project[] = [
         ],
         coverImage: {
             url: salesPredictionCover,
-            alt: 'Sales prediction project image'
+            alt: 'Sales prediction project'
         }
     }
 ];

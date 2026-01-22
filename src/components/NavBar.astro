@@ -2,17 +2,17 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<nav class="flex gap-5 absolute top-8 left-2/4 px-5 py-2 bg-font-contrast-text rounded-xl -translate-x-1/2">
-    <a href="/" class="flex" title="Home">
+<nav class="flex gap-5 absolute top-8 left-2/4 px-5 py-2 bg-font-highlight rounded-xl -translate-x-1/2">
+    <a href="/Portfolio/" class="flex tooltip" data-tooltip="Home" aria-label="Home">
         <Icon name="mdi:home" class="text-3xl"/>
     </a>
-    <a href="/projects" class="flex" title="Projects">
+    <a href="/Portfolio/projects" class="flex tooltip" data-tooltip="Projects" aria-label="Projects">
         <Icon name="mdi:folder" class="text-3xl"/>
     </a>
-    <a href="/experience" class="flex" title="Experience">
+    <a href="/Portfolio/experience" class="flex tooltip" data-tooltip="Experience" aria-label="Experience">
         <Icon name="mdi:work" class="text-3xl"/>
     </a>
-    <a href="/skills" class="flex" title="Skills">
+    <a href="/Portfolio/skills" class="flex tooltip" data-tooltip="Skills" aria-label="Skills">
         <Icon name="mdi:tools" class="text-3xl"/>
     </a>
 </nav>

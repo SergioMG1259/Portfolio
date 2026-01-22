@@ -11,5 +11,8 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  integrations: [icon()]
+  integrations: [icon()],
+
+  site: 'https://sergiomg1259.github.io',
+  base: '/Portfolio/',
 });
