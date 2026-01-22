@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.2.3",
@@ -14,5 +15,8 @@
     "astro": "^5.16.11",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
