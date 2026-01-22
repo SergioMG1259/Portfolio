@@ -7,13 +7,13 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
+
+  site: 'https://sergiomg1259.github.io',
+  base: '/Portfolio/',
+  
   vite: {
-    base: '/Portfolio/',
     plugins: [tailwindcss()]
   },
 
   integrations: [icon()],
-
-  site: 'https://sergiomg1259.github.io',
-  base: '/Portfolio/',
 });
