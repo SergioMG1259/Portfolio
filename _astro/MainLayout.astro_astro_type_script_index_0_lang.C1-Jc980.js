@@ -1,0 +1,1 @@
+const s=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(t.target.classList.add("is-visible"),s.unobserve(t.target))})},{threshold:.15});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".animate-on-scroll").forEach(e=>s.observe(e))});
