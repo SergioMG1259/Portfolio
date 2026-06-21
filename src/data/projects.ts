@@ -43,7 +43,7 @@ export const projects: Project[] = [
             {
                 name: 'GPT-4',
                 description: 'LLM',
-                iconUrl: 'https://images.icon-icons.com/4252/PNG/512/chatgpt_logo_chatgpt_logo_square_green_gpt_ia_openai_icon_264977.png'
+                iconUrl: 'https://cdn-icons-png.flaticon.com/512/11865/11865326.png'
             },
             {
                 name: 'Unity',
